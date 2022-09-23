@@ -3,9 +3,9 @@
 get_context:
   # Save the return address and stack pointer.
   movq (%rsp), %r8
-  movq %r8, 8*0(%rdi) // RIP
+  movq %r8, 8*0(%rdi) // instruction pointer
   leaq 8(%rsp), %r8
-  movq %r8, 8*1(%rdi) // RSP
+  movq %r8, 8*1(%rdi) // stack pointer
 
   # Save preserved registers.
   movq %rbx, 8*2(%rdi)
