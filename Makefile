@@ -1,2 +1,2 @@
 build:
-	gcc -o context_switch asm_functions.S main.c
+	g++ -o context_switch asm_functions.S main.cpp
