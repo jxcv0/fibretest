@@ -16,7 +16,7 @@ int main() {
 
   printf("hello, world!\n");
 
-  if (x == 0) {
+  if (x < 10) {
     x++;
     set_context(&c);
   }
